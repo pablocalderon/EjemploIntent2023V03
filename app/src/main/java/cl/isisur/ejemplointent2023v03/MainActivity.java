@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button boton;
     EditText etnombre,etmatricula;
-    Intent intent;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
 
         etnombre=(EditText) findViewById(R.id.etNombre);
         etmatricula=(EditText) findViewById(R.id.etMatricula);
-        intent= new Intent(this, MainActivity2.class);
+        boton =(Button) findViewById(R.id.btaceptar);
+
+        Intent intent= new Intent(this, MainActivity2.class);
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
